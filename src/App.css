@@ -128,7 +128,7 @@
 
 .cards-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2.5rem;
 }
 
@@ -238,6 +238,7 @@
 }
 
 /* Mobile Responsiveness */
+/* Mobile Responsiveness */
 @media (max-width: 900px) {
   .hero-title {
     font-size: 3rem;
@@ -246,11 +247,43 @@
   .mobile-col {
     flex-direction: column;
     text-align: center;
-    gap: 4rem;
+    gap: 3rem;
   }
 
   .hero-subtitle, .section-desc {
     margin-left: auto;
     margin-right: auto;
+  }
+  
+  .hero {
+    padding: 2rem 0 4rem;
+    min-height: auto;
+  }
+  
+  .hero-image img {
+    max-height: 400px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 2.5rem;
+  }
+  
+  .logo-text {
+    font-size: 1.5rem;
+  }
+  
+  .nav-btn {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+  }
+  
+  .container {
+    padding: 0 1.5rem;
+  }
+  
+  .card {
+    padding: 1.5rem;
   }
 }

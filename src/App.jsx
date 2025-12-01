@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import './App.css'
 import ProblemSolutionFlow from './components/ProblemSolutionFlow';
+import ContractsTable from './components/ContractsTable';
 
 function App() {
   const [scrolled, setScrolled] = useState(false);
@@ -42,7 +43,7 @@ function App() {
               <span className="text-blue">sem enrolação.</span>
             </h1>
             <p className="hero-subtitle delay-100 animate-fade-in">
-              O agente inteligente que revoluciona a extração de contratos na Blip.
+              O agente inteligente que revoluciona a consulta de contratos na Blip.
               Mais agilidade, menos burocracia.
             </p>
             <button 
@@ -63,13 +64,13 @@ function App() {
         <div className="container">
           <h2 className="section-title text-center">O Desafio Anterior</h2>
           <p className="section-desc text-center">
-            Antes do MARF, o processo de obtenção de contratos era manual, lento e suscetível a erros.
+            Antes do MARF, o processo de consulta de contratos era manual, lento e suscetível a erros.
           </p>
           
           <div className="cards-grid">
             <div className="card">
               <h3>⏳ Lentidão</h3>
-              <p>Colaboradores precisavam solicitar contratos a outro setor manualmente, aguardando dias por respostas.</p>
+              <p>Colaboradores solicitavam contratos para outro setor manualmente, aguardando horas por respostas.</p>
             </div>
             <div className="card">
               <h3>😫 Desgaste</h3>
@@ -95,7 +96,7 @@ function App() {
 
           <div className="solution-content-wrapper">
             <p className="solution-text">
-              O MARF transformou completamente a forma como a Blip lida com extração e consulta de contratos. Antes, colaboradores precisavam navegar por pastas, documentos e processos manuais que consumiam tempo, geravam retrabalho e aumentavam o risco de erros. Agora, com a inteligência artificial do MARF, todo o fluxo se torna automático, rápido e estruturado: o agente localiza documentos, interpreta informações essenciais, organiza dados relevantes e disponibiliza tudo de forma clara e imediata. O resultado é um ambiente mais eficiente, com decisões mais rápidas, equipes focadas em tarefas estratégicas e um processo de gestão contratual moderno, confiável e totalmente automatizado.
+              O MARF automatizou completamente a extração de contratos. Agora, o ambiente é mais produtivo, inteligente e ágil.
             </p>
             
             <div className="benefits-grid">
@@ -115,6 +116,9 @@ function App() {
           </div>
         </div>
       </section>
+
+      {/* Contracts Table Section */}
+      <ContractsTable />
 
       {/* Footer */}
       <footer className="footer">
